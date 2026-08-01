@@ -53,9 +53,9 @@
             InstructionAddrLabel.AutoSize = true;
             InstructionAddrLabel.Location = new Point(12, 9);
             InstructionAddrLabel.Name = "InstructionAddrLabel";
-            InstructionAddrLabel.Size = new Size(132, 15);
+            InstructionAddrLabel.Size = new Size(112, 15);
             InstructionAddrLabel.TabIndex = 1;
-            InstructionAddrLabel.Text = "OG Instruction Address:";
+            InstructionAddrLabel.Text = "Instruction Address:";
             // 
             // label1
             // 
@@ -93,6 +93,7 @@
             // 
             OutputTxt.Location = new Point(142, 101);
             OutputTxt.Name = "OutputTxt";
+            OutputTxt.ReadOnly = true;
             OutputTxt.Size = new Size(107, 23);
             OutputTxt.TabIndex = 6;
             // 
