@@ -1,0 +1,14 @@
+﻿bl instructions work the same as normal branches except you just add 1.
+
+A branch instruction works like this : first off it starts with either 0x48 if you want to jump ahead and 0x4b if you want to jump back.
+
+Then the rest is the amount of instructions to jump, it needs to be a multiple of 4.
+
+For example 48000004 jumps ahead one instruction (so it essentially does nothing since it doesn't skip anything) and 48000008 jumps ahead 2 instructions (this one does skip one instruction).
+
+For branching back you have to treat the 6 last bytes as one signed integer so 4bfffffc jumps back one instruction and 4bfffff8 jumps back 2 instructions.
+
+Again, to make the branch linked just add one to the word value.
+
+
+Start Addr for branching back: 0x1000000 (Add 4B)

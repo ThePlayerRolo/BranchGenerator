@@ -1,0 +1,7 @@
+﻿Test forward branch with link:
+branchgen-cli 804D2914 8050f618 -bl
+Expected output: 4803CD05
+
+Test backward branch with link:
+branchgen-cli 805CC898 801b8700 -bl
+Expected output: 4BBEBE69
