@@ -24,5 +24,5 @@ Options:
 - Instruction Address: The address where the instruction is.
 - Branch Address: The address you want to branch to.
 - Link Instruction?: Sets if the branch instruction is a bl (Set the link register).
-- Generate: Generates your instruction
-- Branch Output: Your outputed instruction
+- Generate: Generates your instruction.
+- Branch Output: Your outputed instruction in hex.
