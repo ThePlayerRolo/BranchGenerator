@@ -3,13 +3,15 @@ using BranchGeneratorLib;
 
 namespace branchgen_cli
 {
+
     internal class Program
     {
+        const string helpText = "branchgen [Instruction Address] [Branch Address]\r\n\r\nInstruction Address: The address where the instruction is.\r\nBranch Address: The address you want to branch to.\r\n\r\nOptions:\r\n-v or --vebrose: Gives you more detail on your command.\r\n\r\n-bl or --link: Sets if the branch instruction is a bl (Set the link register).";
         static void Main(string[] args)
         {
             if (args.Length < 2)
             {
-                Console.WriteLine("TODO: Help text");
+                Console.WriteLine(helpText);
                 return;
             }
 
